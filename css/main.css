@@ -1,0 +1,204 @@
+/*COLORS*/
+/*FONTS*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #EEE2DC; }
+
+.background {
+  background: #123C69 url(/images/artificial-flowers-desk-figurines-196658-2.jpg) no-repeat;
+  background-blend-mode: soft-light;
+  opacity: 0.9;
+  background-size: 100% 100%;
+  color: #EEE2DC; }
+  .background .name {
+    color: #AC3B61;
+    font-family: "Pacifico", cursive; }
+
+nav a {
+  margin-left: 2%; }
+
+.center {
+  border: green solid;
+  margin: 5% 5% 0 5%;
+  /*Select span that has a parent center*/ }
+  .center h1 {
+    font-size: 12vw;
+    white-space: nowrap;
+    text-align: center; }
+  .center > span {
+    float: right; }
+
+.line {
+  border: aqua solid;
+  margin: 5% 0;
+  clear: both; }
+
+.icons {
+  border: darkblue solid; }
+  .icons i {
+    margin-left: 27%; }
+
+nav {
+  border: red solid;
+  margin: 0 5% 5% 5%; }
+  nav ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0; }
+    nav ul li {
+      display: inline; }
+      nav ul li a {
+        text-decoration: none;
+        margin-right: 5%; }
+
+footer {
+  border: purple solid;
+  position: sticky;
+  top: 0;
+  background-color: #EEE2DC; }
+
+.aboutMe, .skills {
+  border: orange solid;
+  margin: auto 5%;
+  color: #123C69; }
+  .aboutMe h1, .skills h1 {
+    font-family: "Lobster", cursive; }
+  .aboutMe p, .skills p {
+    text-align: justify;
+    /*white-space: pre-wrap;*/ }
+
+.col {
+  border: green solid 2px;
+  float: left;
+  width: 33.33%; }
+  .col h2 {
+    border: red solid 2px;
+    margin: auto;
+    height: 70px; }
+
+.portfolio {
+  clear: left; }
+
+/*
+body,html {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $primary-font;
+    //font-family: "Times New Roman", Times, serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    color: $name-color;
+    font-family: $name-font;
+}
+
+nav ul {
+    left: 15%;
+    position: absolute;
+    border: orange solid;
+    li {
+        list-style: none;
+        display: inline;
+        margin-right: 50px;
+        border: red solid 2px;
+        & a {
+            text-decoration: none;
+            & :hover {
+                color: $hover-color;
+            }
+        }
+    }
+}
+
+.center {
+    //CENTER TEXT;
+    border: green solid;
+    position: absolute;
+    //top: 40%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    ///height: inherit;
+    height: 24em;
+    h1 {
+        font-size: 13vw;
+        margin: 30px auto 20px auto;
+    }
+    h1,span {
+        color: $background-color;
+        white-space: nowrap;
+    }
+    .name {
+        color: $name-color;
+    }
+    .line{
+        position: relative;
+        top: 4em;
+        border-bottom: $background-color solid 5px;
+    }
+}
+
+.center :nth-child(2) {
+    float: right;
+}
+
+.background {
+    background: $text-color url(/images/artificial-flowers-desk-figurines-196658-2.jpg) no-repeat;
+    //background-image: url(/images/artificial-flowers-desk-figurines-196658-2.jpg);
+    //background-repeat: no-repeat;
+    ///background-color: $text-color;
+    background-size: 100% 100%;
+    height: 90%;
+    max-width: 100%;
+    ///background-blend-mode: overlay;
+    ///background-blend-mode: multiply;
+    background-blend-mode: soft-light;
+    opacity: 0.9;
+    position: relative;
+    overflow: auto;
+}
+
+i {
+    color: $background-color;
+}
+
+.icons {
+    position: relative;
+    left: 25%;
+    //top: 5em;
+    top: 24%;
+    width: 50%;
+    border: green solid;
+    i {
+        left: 22%;
+    }
+}
+
+footer {
+    border: purple solid;
+    background-color: aquamarine;
+    position: -webkit-sticky; /* Safari **
+    position: sticky;
+    top: 0;
+    height: 4em;
+//}
+
+//.aboutMe {
+    border: pink solid;
+    margin: 3%;
+    text-align: justify;
+//}
+*/
+
+/*# sourceMappingURL=main.css.map */
