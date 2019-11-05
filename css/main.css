@@ -1,5 +1,3 @@
-/*COLORS*/
-/*FONTS*/
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -10,195 +8,194 @@ html, body {
   font-family: "Open Sans", sans-serif;
   background-color: #EEE2DC; }
 
-.background {
-  background: #123C69 url(/images/artificial-flowers-desk-figurines-196658-2.jpg) no-repeat;
+.jumbotron {
+  background: #123C69 url(../images/artificial-flowers-desk-figurines.jpg) no-repeat;
   background-blend-mode: soft-light;
   opacity: 0.9;
   background-size: 100% 100%;
   color: #EEE2DC; }
-  .background .name {
-    color: #AC3B61;
-    font-family: "Pacifico", cursive; }
+  .jumbotron .jumbotronText {
+    margin: 0 5%; }
+    .jumbotron .jumbotronText h1 {
+      font-size: 12vw;
+      white-space: nowrap;
+      text-align: center;
+      margin-top: 0px;
+      padding-top: 15%; }
 
-nav a {
-  margin-left: 2%; }
+.name {
+  color: #AC3B61;
+  font-family: "Pacifico", cursive; }
 
-.center {
-  border: green solid;
-  margin: 5% 5% 0 5%;
-  /*Select span that has a parent center*/ }
-  .center h1 {
-    font-size: 12vw;
-    white-space: nowrap;
-    text-align: center; }
-  .center > span {
-    float: right; }
+/*TOP NAV*/
+.topNav {
+  text-align: right;
+  margin-right: 2%; }
+  .topNav a {
+    margin-left: 2%;
+    color: #EEE2DC;
+    text-decoration: none; }
+
+.right {
+  float: right; }
 
 .line {
-  border: aqua solid;
+  border: #AC3B61 solid 3px;
   margin: 5% 0;
   clear: both; }
 
 .icons {
-  border: darkblue solid; }
+  text-align: center; }
   .icons i {
-    margin-left: 27%; }
+    margin: auto 14.8%;
+    color: #EEE2DC; }
+    .icons i:hover {
+      color: #EDC7B7; }
+  .icons .fa-github {
+    margin-bottom: 2%; }
 
-nav {
-  border: red solid;
-  margin: 0 5% 5% 5%; }
-  nav ul {
-    list-style: none;
-    text-align: center;
-    padding-left: 0; }
-    nav ul li {
-      display: inline; }
-      nav ul li a {
-        text-decoration: none;
-        margin-right: 5%; }
+.container {
+  margin: auto 5%;
+  min-height: 100%; }
 
-footer {
-  border: purple solid;
+nav.desktopHide {
   position: sticky;
   top: 0;
-  background-color: #EEE2DC; }
+  background-color: #EEE2DC;
+  z-index: 1;
+  margin-top: 1%;
+  text-align: center; }
+  nav.desktopHide a {
+    text-decoration: none;
+    margin: auto 5%;
+    color: #123C69; }
+    nav.desktopHide a:visited {
+      color: #AC3B61; }
 
-.aboutMe, .skills {
-  border: orange solid;
-  margin: auto 5%;
+.desktopShow {
+  display: none; }
+
+.aboutMe, .skills, .portfolio {
   color: #123C69; }
-  .aboutMe h1, .skills h1 {
-    font-family: "Lobster", cursive; }
-  .aboutMe p, .skills p {
-    text-align: justify;
-    /*white-space: pre-wrap;*/ }
+  .aboutMe h1, .skills h1, .portfolio h1 {
+    font-family: "Lobster", cursive;
+    color: #AC3B61;
+    text-shadow: 2px 2px 2px #123C69; }
+  .aboutMe p, .skills p, .portfolio p {
+    text-align: justify; }
 
-.col {
-  border: green solid 2px;
-  float: left;
-  width: 33.33%; }
-  .col h2 {
-    border: red solid 2px;
+.column {
+  border-bottom: #EEE2DC solid 0.1px;
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 2.5%; }
+  .column h2 {
     margin: auto;
-    height: 70px; }
-
-.portfolio {
-  clear: left; }
-
-/*
-body,html {
-    background-color: $background-color;
-    color: $text-color;
-    font-family: $primary-font;
-    //font-family: "Times New Roman", Times, serif;
-    height: 100%;
-    width: 100%;
-    margin: 0;
+    height: 70px;
+    background-color: #EDC7B7;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .column ul {
+    list-style: none;
     padding: 0;
-}
+    display: none; }
 
-.name {
-    color: $name-color;
-    font-family: $name-font;
-}
+.boxShadow {
+  border-radius: 5%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
-nav ul {
-    left: 15%;
-    position: absolute;
-    border: orange solid;
-    li {
-        list-style: none;
-        display: inline;
-        margin-right: 50px;
-        border: red solid 2px;
-        & a {
-            text-decoration: none;
-            & :hover {
-                color: $hover-color;
-            }
-        }
-    }
-}
+.project {
+  margin-bottom: 2.5%;
+  background-color: #EDC7B7;
+  padding-bottom: 2.5%; }
+  .project h2 {
+    text-align: center; }
+  .project h3 {
+    margin-left: 2.5%; }
+  .project .overlay {
+    position: relative; }
+    .project .overlay:hover::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 95%;
+      margin-left: 2.5%;
+      height: 99%;
+      background: #AC3B61;
+      opacity: .8; }
+  .project .buttons {
+    text-align: center;
+    margin-top: 10px; }
 
-.center {
-    //CENTER TEXT;
-    border: green solid;
-    position: absolute;
-    //top: 40%;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+img {
+  width: 95%;
+  height: auto;
+  margin-left: 2.5%; }
 
-    ///height: inherit;
-    height: 24em;
-    h1 {
-        font-size: 13vw;
-        margin: 30px auto 20px auto;
-    }
-    h1,span {
-        color: $background-color;
-        white-space: nowrap;
-    }
-    .name {
-        color: $name-color;
-    }
-    .line{
-        position: relative;
-        top: 4em;
-        border-bottom: $background-color solid 5px;
-    }
-}
+/*******600PX AND LARGER VERSION**********/
+@media screen and (min-width: 600px) {
+  .container {
+    position: absolute; }
 
-.center :nth-child(2) {
+  .mainContent {
     float: right;
-}
+    width: 80%; }
 
-.background {
-    background: $text-color url(/images/artificial-flowers-desk-figurines-196658-2.jpg) no-repeat;
-    //background-image: url(/images/artificial-flowers-desk-figurines-196658-2.jpg);
-    //background-repeat: no-repeat;
-    ///background-color: $text-color;
-    background-size: 100% 100%;
-    height: 90%;
-    max-width: 100%;
-    ///background-blend-mode: overlay;
-    ///background-blend-mode: multiply;
-    background-blend-mode: soft-light;
-    opacity: 0.9;
-    position: relative;
-    overflow: auto;
-}
+  .aboutMe, .skills, .portfolio {
+    margin-left: 1%; }
 
-i {
-    color: $background-color;
-}
+  .skills {
+    float: inherit;
+    width: 99%; }
 
-.icons {
-    position: relative;
-    left: 25%;
-    //top: 5em;
-    top: 24%;
-    width: 50%;
-    border: green solid;
-    i {
-        left: 22%;
-    }
-}
+  .column {
+    float: left;
+    width: 32%;
+    margin-right: 1%; }
 
-footer {
-    border: purple solid;
-    background-color: aquamarine;
-    position: -webkit-sticky; /* Safari **
-    position: sticky;
-    top: 0;
-    height: 4em;
-//}
+  .portfolio {
+    clear: both; }
 
-//.aboutMe {
-    border: pink solid;
-    margin: 3%;
-    text-align: justify;
-//}
-*/
+  .project {
+    position: relative; }
+    .project .buttons {
+      top: 40%;
+      transform: translateY(-60%);
+      position: absolute;
+      width: 100%;
+      margin: 0 auto; }
+
+  .last {
+    margin-bottom: 0; }
+
+  .desktopShow {
+    display: inherit; }
+
+  .desktopHide {
+    display: none; }
+
+  /*SIDE CONTENT*/
+  /*SIDE NAV*/
+  .sideContent {
+    width: 20%;
+    height: 100%;
+    position: inherit;
+    background: #123C69; }
+    .sideContent .sidenav {
+      position: sticky;
+      top: 0; }
+      .sideContent .sidenav a {
+        display: block;
+        color: #EEE2DC;
+        margin: 30px 15px;
+        text-decoration: none; }
+        .sideContent .sidenav a:hover {
+          color: #EDC7B7; } }
+@media screen and (min-width: 600px) and (max-width: 675px) {
+  .skills .column .inner h2 {
+    font-size: 1em; } }
+/*******END**********/
 
 /*# sourceMappingURL=main.css.map */
