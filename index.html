@@ -1,6 +1,3 @@
-<!--<h1> Hello World! </h1>
-<p> My name is CSTONE001 </p>-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,96 +11,197 @@
     <title>Chynna Stone</title>
 </head>
 <body>
-    <div class="background">   
-        <nav>
-            <a href=""><span class="name">Chynna</span></a>
+    <div class="jumbotron">  
+        <!----VERY TOP NAVBAR---->              
+        <nav class="topNav desktopShow"> 
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
         </nav>
+        <!----------END---------->
 
-        <div class="center">    
+        <div class="jumbotronText">    
             <h1>Hey, I'm <span class="name">Chynna</span></h1>
-            <span>Self taught Junior Front End Developer</span>
+            <span class="right">Self taught Junior Front End Developer</span>
             <div class="line"></div>
             <div class="icons">
-                <i class="fas fa-user fa-4x"></i>
-                <i class="fas fa-envelope fa-4x"></i>
+                <a href="https://github.com/cstone001"><i class="fab fa-github fa-4x"></i></a>
+                <a href="mailto:cstone2191@gmail.com" target="_blank"><i class="fas fa-envelope fa-4x"></i></a>
             </div>
         </div>
     </div>    
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href=""><span class="logo">About Me</span></a></li>
-                <li><a href=""><span class="logo">Skills</span></a></li>
-                <li><a href=""><span class="logo">Portfolio</span></a></li>
-                <li><a href=""><span class="logo">Resume</span></a></li>
-            </ul>
+    <!--CONTAINER FOR SIDE NAV AND MAIN-->
+    <div class="container">
+        <!--MOBILE NAV UNDER ICONS-->
+        <nav class="desktopHide">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
         </nav>
-    </footer>
+        <!-----------END------------>
 
-    <div class="aboutMe">
-        <h1>About Me</h1>
-        <p>&ensp;&ensp;I'm a self taught junior front end developer, based in Durham, North Carolina.  I am a graduate of North Carolina Central University with a B.S. in Biology. My passion for building and designing things has led me to my new found passion in front end web development. Front end web development allows me to combine my passion for building and designing things all while staying clean. </p>
-
-        <p>&ensp;&ensp;If I am not watching coding videos on Udemy.com or Youtube or reading books on coding you can catch me doing something artsy.</p>
-    </div>
-
-    <!--Skills-->
-    <div class="skills">
-        <h1>Skills</h1>
-        <div class="col">
-            <div>
-                <h2>Programming Languages</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>Javascript</li>
-                </ul>
-            </div>
-            <div>
-                <h2>UI Frameworks</h2>
-                <ul>
-                    <li>Bootstrap</li>
-                    <li>jQuery</li>
-                </ul>
-            </div>
+        <!-----SIDE CONTENT CONTAINER----->
+        <div class="sideContent tents desktopShow">
+            <nav class="sidenav">
+                <a href="#"><span class="name">Chynna</span></a>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+            </nav>
         </div>
-        <div class="col">
-            <div>
-                <h2>Stylesheet Languages</h2>
-                <ul>
-                    <li>CSS</li>
-                    <li>SASS/SCSS</li>
-                </ul>
-            </div>
-            <div>
-                <h2>IDEs</h2>
-                <ul>
-                    <li>Atom</li>
-                    <li>Visual Studio Code</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col">
-            <div>
-                <h2>Operating Systems</h2>
-                <ul>
-                    <li>Mac OS X</li>
-                    <li>Microsoft Windows</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Source Code Control</h2>
-                <ul>
-                    <li>Git/Github</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+        <!------------END------------->
 
-    <!--Portfolio-->
-    <div class="portfolio">
-        <h1>Portfolio</h1>
-    </div>
+        <!---MAIN CONTENT CONTAINER--->
+        <div class="mainContent tents">
+            <!--ABOUT ME-->
+            <section class="aboutMe" id="about">
+                <h1>About Me</h1>
+                <p>&ensp;&ensp;I'm a self taught junior front end developer, based in Durham, North Carolina.  I am a graduate of North Carolina Central University with a B.S. in Biology. My passion for building and designing things has led me to my new found passion in front end web development. Front end web development allows me to combine my passion for building and designing things all while staying clean. </p>
 
+                <p>&ensp;&ensp;If I am not watching coding videos on Udemy.com or Youtube or reading books on coding you can catch me doing something artsy.</p>
+            </section>
+            <!----END----->
+
+            <!---Skills--->
+            <section class="skills" id="skills">
+                <h1>Skills</h1>
+                <div class="column boxShadow">
+                    <div class="inner">
+                        <h2 class="programmingLang boxShadow">Programming Languages</h2>
+                        <ul class="programmingLangShow">
+                            <li>HTML</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="inner">
+                        <h2 class="uIFrame boxShadow">UI Frameworks</h2>
+                        <ul class="uIFrameShow">
+                            <li>Bootstrap</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column boxShadow">
+                    <div class="inner">
+                        <h2 class="stylesheet boxShadow">Stylesheet Languages</h2>
+                        <ul class="stylesheetShow">
+                            <li>CSS</li>
+                            <li>SASS/SCSS</li>
+                        </ul>
+                    </div>
+                    <div class="inner">
+                        <h2 class="iDE boxShadow">IDEs</h2>
+                        <ul class="iDEShow">
+                            <li>Atom</li>
+                            <li>Visual Studio Code</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column boxShadow">
+                    <div class="inner">
+                        <h2 class="operatingSys boxShadow">Operating Systems</h2>
+                        <ul class="operatingSysShow">
+                            <li>Mac OS X</li>
+                            <li>Microsoft Windows</li>
+                        </ul>
+                    </div>
+                    <div class="inner">
+                        <h2 class="sourceCont boxShadow">Source Code Control</h2>
+                        <ul class="sourceContShow">
+                            <li>Git/Github</li>
+                        </ul>
+                    </div>
+                </div> 
+            </section>
+            <!----END----->
+
+            <!--Portfolio-->
+            <section class="portfolio" id="portfolio">
+                <h1>Portfolio</h1>
+                    <!--PROJECT 1-->
+                    <div class="project boxShadow">
+                        <h2>Kevin J. Stone</h2> 
+                        <div class="overlay">
+                            <img src="images/KJS.png" alt="Kevin Stone website" class="overlay"> 
+                        </div>
+                        <div class="buttons">
+                            <button onclick="window.location.href = 'https://cstone001.github.io/KJS/index.html';" type="button" class="live">View live</button>
+                            <button onclick="window.location.href = 'https://github.com/cstone001/KJS';" type="button" class="github">View Github</button>
+                        </div>
+                        <h3>Skills used:</h3>
+                        <ul>
+                            <li>SASS</li>
+                            <li>Bootstrap</li>
+                            <li>HTML</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </div>
+                    <!-----END----->
+
+                    <!--PROJECT 2-->
+                    <div class="project boxShadow">    
+                        <h2>Grocery List</h2> 
+                        <div class="overlay">
+                            <img src="images/groceryList.png" alt="Grocery List"  class="overlay"> 
+                        </div>
+                        <div class="buttons">
+                            <button onclick="window.location.href = 'https://cstone001.github.io/GroceryList/';" type="button" class="live">View live</button>
+                            <button onclick="window.location.href = 'https://github.com/cstone001/GroceryList';" type="button" class="github">View Github</button>
+                        </div>
+                        <h3>Skills used:</h3>
+                        <ul>
+                            <li>SASS</li>
+                            <li>HTML</li>
+                            <li>Bootstrap</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <!-----END----->
+
+                    <!--PROJECT 3-->
+                    <div class="project boxShadow">    
+                        <h2>Tic Tac Toe</h2> 
+                        <div class="overlay">
+                            <img src="images/ticTacToe.png" alt="Tic Tac Toe"  class="overlay"> 
+                        </div>
+                        <div class="buttons">
+                            <button onclick="window.location.href = 'https://cstone001.github.io/ticTacToe/';" type="button" class="live">View live</button>
+                            <button onclick="window.location.href = 'https://github.com/cstone001/ticTacToe';" type="button" class="github">View Github</button>
+                        </div>
+                        <h3>Skills used:</h3>
+                        <ul>
+                            <li>SASS</li>
+                            <li>HTML</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <!-----END----->
+
+                    <!--PROJECT 4-->
+                    <div class="project boxShadow last">    
+                        <h2>Sample</h2> 
+                        <div class="overlay">
+                            <img src="images/sample.png" alt="Tic Tac Toe"  class="overlay"> 
+                        </div>
+                        <div class="buttons">
+                            <button onclick="window.location.href = 'https://cstone001.github.io/Sample/';" type="button" class="live">View live</button>
+                            <button onclick="window.location.href = 'https://github.com/cstone001/Sample';" type="button" class="github">View Github</button>
+                        </div>
+                        <h3>Skills used:</h3>
+                        <ul>
+                            <li>SASS</li>
+                            <li>HTML</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <!-----END----->
+            </section>          
+        </div>
+        <!------------END------------->           
+    </div><!--CONTAINER-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="javascript/main.js"></script>
 </body>
 </html>
