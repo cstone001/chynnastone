@@ -1,0 +1,271 @@
+/*COLORS*/
+$text-color: #123C69;
+$background-color: #EEE2DC;
+$name-color: #AC3B61;
+$hover-color: #EDC7B7;
+
+/*FONTS*/
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Lobster', cursive; 
+$name-font: 'Pacifico', cursive;
+
+/*JUMBOTRON IMAGE*/
+$jumbotron-image: $text-color url(../images/artificial-flowers-desk-figurines.jpg) no-repeat;
+
+/*HORIZONTALLY ALIGN TEXT*/
+$textMiddle: center;
+
+/*COLUMN SIZE*/
+$left-content: 20%;  //TWO COLUMNS PAGE
+$right-content: 90%; //ONE COLUMN PAGE
+
+/*SHADOWS*/
+$shadow-box: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$shadow-text: 2px 2px 2px $text-color;
+
+//ENSURES THAT THE PADDING AND BORDER OF AN ELEMENT NO LONGER INCREASES ITS WIDTH
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body {
+    margin: 0;
+    font-family: $primary-font;
+    background-color: $background-color;
+}
+
+.jumbotron {
+    background: $jumbotron-image;
+    background-blend-mode: soft-light;
+    opacity: 0.9;
+    background-size: 100% 100%;
+    color: $background-color;
+
+    .jumbotronText {
+        margin: 0 5%;
+        h1 {
+            font-size: 12vw;
+            white-space: nowrap; 
+            text-align: $textMiddle;  
+            margin-top: 0px; 
+            padding-top: 15%;
+        }
+    }
+}
+
+.name {
+    color: $name-color;
+    font-family: $name-font;
+}
+
+/*TOP NAV*/
+.topNav {    
+    text-align: right;
+    margin-right: 2%;
+    a {       
+        margin-left: 2%;
+        color: $background-color;
+        text-decoration: none;
+    }
+}
+
+.right {
+    float: right;
+}
+
+.line {
+    border: $name-color solid 3px;
+    margin: 5% 0;
+    clear: both;
+}
+
+.icons {
+    text-align: $textMiddle;
+    i {
+        margin: auto 14.8%;
+        color: $background-color;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+    .fa-github {
+        margin-bottom: 2%;
+    }
+}
+
+.container {
+    margin: auto 5%;
+    min-height: 100%;
+}
+
+nav.desktopHide {
+    position: sticky;
+    top: 0;
+    background-color: $background-color;
+    z-index: 1;
+    margin-top: 1%;
+    text-align: $textMiddle;
+    a {
+        text-decoration: none;
+        margin: auto 5%;
+        color: $text-color;
+        &:visited {
+            color: $name-color;
+        }
+    }
+}
+
+.desktopShow {
+    display: none;
+}
+
+.aboutMe, .skills, .portfolio {
+    color: $text-color;
+    h1 {
+        font-family: $secondary-font;
+        color: $name-color;
+        text-shadow: $shadow-text;
+    }
+    p {
+        text-align: justify;
+   }
+}
+
+.column {
+    border-bottom: $background-color solid .1px;
+    text-align: $textMiddle;
+    font-family: sans-serif;
+    margin-bottom: 2.5%;
+    h2 {
+        margin: auto;
+        height: 70px;
+        background-color: $hover-color;
+        border-radius: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        display: none;
+    }
+}
+ 
+.boxShadow {
+    border-radius: 5%;
+    box-shadow: $shadow-box;
+}
+
+.project {
+    margin-bottom: 2.5%;
+    background-color: $hover-color;
+    padding-bottom: 2.5%;
+    h2 {
+        text-align: $textMiddle;
+    }
+    h3 {
+        margin-left: 2.5%;       
+    }
+    .overlay {
+        position: relative;        
+        &:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 95%;
+            margin-left: 2.5%;
+            height: 99%;
+            background: $name-color;
+            opacity: .8;
+        }
+    }
+    .buttons {
+        text-align: $textMiddle;
+        margin-top: 10px;
+    }
+}
+
+img { 
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+}
+
+/*******600PX AND LARGER VERSION**********/
+@media screen and (min-width: 600px) { 
+    .container {
+        position: absolute;
+    }
+    .mainContent {
+        float: right;
+        width: 80%;
+    }
+    .aboutMe, .skills, .portfolio {
+        margin-left: 1%;
+    } 
+    .skills {
+        float: inherit;
+        width: 99%;
+    }
+    .column {
+        float: left;
+        width: 32%;
+        margin-right: 1%;
+    }
+    .portfolio {
+        clear: both;
+    }
+    .project {
+        position: relative;
+        .buttons {
+            top: 40%;
+            transform: translateY(-60%);
+            position: absolute;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .last {
+        margin-bottom: 0;
+    }
+
+    .desktopShow {
+        display: inherit;
+    }
+    .desktopHide {
+        display: none;
+    }
+
+    /*SIDE CONTENT*/
+    /*SIDE NAV*/
+    .sideContent {
+        width: $left-content;
+        height: 100%;
+        position: inherit;
+        background: $text-color;
+        .sidenav {
+            position: sticky;
+            top: 0;
+            a {
+                display: block;
+                color: $background-color;
+                margin: 30px 15px;
+                text-decoration: none;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+}
+ 
+@media screen and (min-width: 600px) and (max-width: 675px) {
+    .skills .column .inner h2 {
+        font-size: 1em;
+    }
+}
+
+/*******END**********/
