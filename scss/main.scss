@@ -96,12 +96,15 @@ html,body {
 }
 
 .container {
+    height: 100%;
     margin: auto 5%;
     min-height: 100%;
 }
 
 nav.desktopHide {
     position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
     top: 0;
     background-color: $background-color;
     z-index: 1;
@@ -194,20 +197,26 @@ img {
     margin-left: 2.5%;
 }
 
+footer {
+    text-align: $textMiddle;
+    background-color: $text-color;
+    color: $background-color;
+}
+
 /*******600PX AND LARGER VERSION**********/
 @media screen and (min-width: 600px) { 
     .container {
-        position: absolute;
+        display: flex;
+        flex-direction: row;
     }
     .mainContent {
-        float: right;
-        width: 80%;
+        flex: 80%;
     }
     .aboutMe, .skills, .portfolio {
         margin-left: 1%;
     } 
     .skills {
-        float: inherit;
+        float: right;
         width: 99%;
     }
     .column {
@@ -233,7 +242,7 @@ img {
     }
 
     .desktopShow {
-        display: inherit;
+        display: block;
     }
     .desktopHide {
         display: none;
@@ -242,12 +251,13 @@ img {
     /*SIDE CONTENT*/
     /*SIDE NAV*/
     .sideContent {
-        width: $left-content;
-        height: 100%;
-        position: inherit;
+        flex: $left-content;
+        display: block;
         background: $text-color;
         .sidenav {
             position: sticky;
+            position: -webkit-sticky;
+            position: -moz-sticky;
             top: 0;
             a {
                 display: block;
@@ -262,7 +272,7 @@ img {
     }
 }
  
-@media screen and (min-width: 600px) and (max-width: 675px) {
+@media screen and (min-width: 600px) and (max-width: 705px) {
     .skills .column .inner h2 {
         font-size: 1em;
     }
